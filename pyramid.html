@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            margin-left: 90px;
+            margin-top: 90px;
+            margin-right: 90px;
+            margin-bottom: 20px;
+            padding: 40px;
+            color: silver;
+            background-color: mediumpurple;
+            border:
+            border-radius:
+            font-size:
+            font-weight:
+        }
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+            margin:auto;
+            color: : mediumpurple;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+            background-color: seashell;
+            padding-left:
+            padding-right:
+            padding-top:
+            padding-bottom:
+            color:
+            background-color:
+            border:
+            border-radius:
+            font-size:
+            font-weight:
+        }
+
+        form {
+            border: 2px solid mediumpurple;
+            border-radius: 0px;
+            margin: 20px 200px 20px 200px;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            background-color: whitesmoke;
+            font-weight:
+        }
+
+        label {
+            background-color: lightgray;
+            margin:0px;
+            padding: 20px 160px 10px 160px;
+
+            background-color:
+            border:
+            border-radius:
+            font-size:
+            font-weight:
+
+        }
+
+        output {
+            margin-right: 30px;
+            font-weight:bold;
+        }
+
+        select {
+        font-weight:bold;
+        }
+    </style>
+
+<!-- margin, padding, color, background-color, border, border-radius, font-size, font-weight -->
+
+</head>
+<body>
+    <h1>Pyramid Slide</h1>
+
+    <br>
+
+    <form id="draw-form">
+        <label>
+            Brick Symbol:
+            <select id="block">
+                <option>#</option>
+                <option>@</option>
+                <option>X</option>
+                <option>$</option>
+            </select>
+            <label for="slider">How High?</label>
+                <input type="range" id="slider" min="1" max="20" step="1" value="1" oninput="drawPyramid(this.value)"/>
+                <output for="slider" id="size"></output>
+        </label>
+        <br><br>
+        <br><br>
+
+        <div id="pyramid"></div>
+
+    </form>
+    <script src="pyramid.js"></script>
+</body>
+</html>
